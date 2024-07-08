@@ -19,6 +19,31 @@
     <link rel="stylesheet" href="assets/css/templatemo-finance-business.css">
     <link rel="stylesheet" href="assets/css/owl.css">
 
+
+    <style>
+      .bg-primary {
+          background-color: #28a745 !important; /* Change to your website's green color */
+      }
+      .btn-primary {
+          background-color: #28a745 !important; /* Change to your website's green color */
+          border-color: #28a745 !important; /* Change to your website's green color */
+      }
+      .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+          background-color: #218838 !important; /* Darken the green color for hover/focus/active states */
+          border-color: #1e7e34 !important; /* Darken the green color for hover/focus/active states */
+      }
+      .filled-button {
+          background-color: #28a745;
+          color: #fff;
+          border: none;
+          padding: 10px 20px;
+          cursor: pointer;
+      }
+      .filled-button:hover {
+          background-color: #218838;
+      }
+  </style>
+
   </head>
 
   <body>
@@ -93,18 +118,53 @@
       </nav>
     </header>
 
-    <!-- Page Content -->
-     <!-- Page Content -->
-    <div class="login-page-heading header-text">
-      <div class="container">
-        <div class="row">
+ <!-- Page Content -->
+ <div class="login-page-heading header-text">
+  <div class="container">
+      <div class="row">
           <div class="col-md-12">
-            <h1>Welcome to EcoParali</h1>
-            <span>Bringing the Straw Revolution!</span><br>
+              <h1>Login to EcoParali</h1>
+              <span>Access the Straw Revolution!</span><br>
           </div>
-        </div>
       </div>
-    </div><br>
+  </div>
+</div><br>
+
+<div class="login-page">
+  <div class="container">
+      <div class="row justify-content-center">
+          <div class="col-md-6">
+              <div class="login-form">
+                  <form action="" method="post">
+                      <div class="form-group">
+                          <label for="email">Email address</label>
+                          <input type="email" class="form-control" id="email" placeholder="Enter email" required>
+                      </div>
+                      <div class="form-group">
+                          <label for="password">Password</label>
+                          <input type="password" class="form-control" id="password" placeholder="Password" required>
+                      </div>
+                      <div class="form-group">
+                          <label for="user_type">I am a:</label>
+                          <select class="form-control" id="user_type" required>
+                              <option value="farmer">Farmer</option>
+                              <option value="company">Company</option>
+                          </select>
+                      </div>
+                      <button type="submit" class="filled-button">Login</button>
+                  </form>
+                  <div class="text-center">
+                      <a href="register.html">Don't have an account? Register</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+    <!-- Page Content -->
+    
     <div class="partners">
       <div class="container">
         <div class="row">
@@ -136,6 +196,7 @@
         </div>
       </div>
     </div>
+
 
 
     <!-- Footer Starts Here -->
@@ -257,3 +318,40 @@
 
   </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
