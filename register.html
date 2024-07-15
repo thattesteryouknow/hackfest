@@ -138,6 +138,7 @@
                     </div>
                     <div class="card-body">
                         <form id="register-form" action="register_process.php" method="post">
+
                             <div class="form-group">
                                 <label for="user_type">I am a:</label>
                                 <select class="form-control" id="user_type" name="user_type" required>
@@ -201,6 +202,10 @@
                                     <input type="text" class="form-control" id="company_name" name="company_name" required>
                                 </div>
                                 <div class="form-group">
+                                    <label for="mobile">Mobile Number:</label>
+                                    <input type="tel" class="form-control" id="mobile" name="mobile" required>
+                                </div>
+                                <div class="form-group">
                                     <label for="about">About:</label>
                                     <textarea class="form-control" id="about" name="about" rows="4" required></textarea>
                                 </div>
@@ -220,6 +225,9 @@
                             </div>
 
                             <div id="sell-options" style="display: none;">
+
+                               
+
                                 <div class="form-group">
                                     <label for="product_name">Product Name:</label>
                                     <input type="text" class="form-control" id="product_name" name="product_name" required>
