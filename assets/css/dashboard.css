@@ -1,0 +1,117 @@
+
+* {
+    margin-left: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+    
+body {
+    font-family: Arial, sans-serif;
+}
+h1{
+    text-align: center;
+}
+.containers {
+    display: flex;
+}
+
+.sidebar {
+    margin-top: 20px;
+    width: 250px;
+    background-color:#83ad32;
+    color: white;
+    /*padding: 20px;*/
+    padding-top: 30px;
+    text-align: center;
+    margin-left: 0; /* Ensure no left margin */
+    }
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li {
+    margin: 20px 40px;
+}
+
+.sidebar ul li a {
+    /*background-color: #83ad32;*/
+    color: white;
+    text-decoration: none;
+}
+.sidebar ul li:hover {
+    background: #48ff00;
+    color: #83ad32; 
+    
+}
+
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+.section {
+    display: none;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #f1f1f1;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 20px;
+    width: calc(33.333% - 40px); /* 3 cards per row */
+    height: 200px; /* Square box */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    text-decoration: none;
+    color: #000000;
+    font-size: 20px;
+    transition: transform 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    color: #83ad32;
+    }
+
+.table-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.table-wrapper {
+    width: 100%; /* Adjust width for spacing between tables */
+    margin: 20px 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    }
+
+table, th, td {
+    border: 1px solid #ddd;
+    
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+h3 {
+    margin-top: 20px;
+}
+
