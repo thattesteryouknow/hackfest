@@ -11,6 +11,11 @@ body {
 h1{
     text-align: center;
 }
+h2{
+    text-align: center;
+    font-size: 40px;
+    color: #83ad32;
+}
 .containers {
     display: flex;
 }
@@ -109,6 +114,11 @@ table, th, td {
 th, td {
     padding: 10px;
     text-align: left;
+}
+.table-containers {
+    width: 95%;
+    justify-content: space-around; 
+    margin: 40px 10px 60px 10px;
 }
 
 h3 {
