@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
+<head>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -18,34 +18,29 @@
     <link rel="stylesheet" href="assets/css/fontawesome.css">
     <link rel="stylesheet" href="assets/css/templatemo-finance-business.css">
     <link rel="stylesheet" href="assets/css/owl.css">
-<!--
+    <link rel="stylesheet" href="assets\css\dashboard.css">
 
-Finance Business TemplateMo
+    <style>
+      /* Custom cursor animation */
+      .cursor {
+          width: 15px;
+          height: 15px;
+          border: 2px solid #44cb05;
+          border-radius: 50%;
+          position: absolute;
+          transform: translate(-50%, -50%);
+          pointer-events: none;
+          transition: width 0.2s ease, height 0.2s ease, border 0.2s ease;
+          z-index: 1000;
+      }
 
-https://templatemo.com/tm-545-finance-business
+      .cursor.hover {
+          width: 25px;
+          height: 25px;
+          border: 2px solid #44cb05;
+      }
+  </style>
 
--->
-
-<style>
-  /* Custom cursor animation */
-  .cursor {
-      width: 15px;
-      height: 15px;
-      border: 2px solid #44cb05;
-      border-radius: 50%;
-      position: absolute;
-      transform: translate(-50%, -50%);
-      pointer-events: none;
-      transition: width 0.2s ease, height 0.2s ease, border 0.2s ease;
-      z-index: 1000;
-  }
-
-  .cursor.hover {
-      width: 25px;
-      height: 25px;
-      border: 2px solid #44cb05;
-  }
-</style>
   </head>
 
   <body>
@@ -89,16 +84,7 @@ https://templatemo.com/tm-545-finance-business
     <header class="">
       
       <nav class="navbar navbar-expand-lg">
-	<a href="chatbot.html">      
-        <img src="assets/images/ecobot.png" width="90px" height="100px" alt="" style="position: absolute; top:10px; bottom: 0; right: 0; animation: pulsate 2s ease-in-out infinite;">
-	</a>
-    <style>
-        @keyframes pulsate {
-            0% { transform: scale(1); }
-            50% { transform: scale(1.1); }
-            100% { transform: scale(1); }
-        }
-    </style>
+        
         <div class="container">
           
           
@@ -118,277 +104,251 @@ https://templatemo.com/tm-545-finance-business
               <li class="nav-item">
                 <a class="nav-link" href="services.html">Our Services</a>
               </li>                          
-              <li class="nav-item active">
-                <a class="nav-link" href="#top">Contact Us</a>
-                <span class="sr-only">(current)</span>
-              </li>
               <li class="nav-item">
-                <a class="nav-link" href="login.html">Log In/Register</a>
+                <a class="nav-link" href="contact.html">Contact Us</a>
               </li>
+              
             </ul>
           </div>
         </div>
       </nav>
     </header>
 
-    <!-- Page Content -->
-    <div class="page-heading header-text">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <h1>Contact Us</h1>
-            <span>Feel free to send us a message now!</span>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="contact-information">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4">
-            <div class="contact-item">
-              <i class="fa fa-phone"></i>
-              <h4>Phone</h4>
-              <p>Connect with us to sell your stubble, get raw material supply or trade in bulk. We are one call away.</p>
-              <a href="#">+91-817-190-8727</a>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="contact-item">
-              <i class="fa fa-envelope"></i>
-              <h4>Email</h4>
-              <p>Got any queries? Feel free to send us an email to connect with us and bring a straw revolution.</p>
-              <a href="#">ecoparali@gmail.com</a>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="contact-item">
-              <i class="fa fa-map-marker"></i>
-              <h4>Location</h4>
-              <p>G. L. Bajaj Institute of Technology & Management, Greater Noida, Uttar Pradesh, 201308</p>
-              <a href="https://maps.app.goo.gl/xPkoTUrispjEt6aq8">View on Google Maps</a>
+    <div class="profile-page-heading header-text">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h1>Welcome to your Profile</h1>
+              <!--<span>Thank you for joining us!</span>-->
             </div>
           </div>
         </div>
       </div>
-    </div>
-
-    <div class="callback-form contact-us">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="section-heading">
-              <h2>Send us a <em>message</em></h2>
-              <span>JOIN HANDS TO MAKE A CLEANER & GREENER INDIA!</span>
+    <body>
+      <br><br><br>
+        <h2>Recent Registrations<br><br></h2>
+        <div class="table-containers">
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Sr.No.</th>
+                            <th>Farmer name</th>
+                            <th>Father's Name</th>
+                            <th>Contact No.</th>
+                            <th>State</th>
+                            <th>District</th>
+                            <th>Village / City</th>
+                            <th>Address</th>
+                            <th>Type of Crop</th>
+                            <th>Land Area (in acr)</th>
+                            <th>Harvesting Season</th>
+                            <th>Identification Proof</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Add 15 rows here -->
+                        <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                        <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                        <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                        <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                        <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                        <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                        <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                        <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                        <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                        <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                        <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                        <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                        <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                        <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                        <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                        <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                        <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                        <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                        <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                        <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                        <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                        <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                        <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                        <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                        <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                        <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                        <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                        <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                        <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                        <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                        <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                        <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                        <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                        <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                        <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                        <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                        <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                        
+                        <!-- Add more rows as needed -->
+                    </tbody>
+                </table>
             </div>
-          </div>
-          <div class="col-md-12">
-            <div class="contact-form">
-              <form id="contact" action="" method="get">
-                <div class="row">
-                  <div class="col-lg-4 col-md-12 col-sm-12">
-                    <fieldset>
-                      <input name="name" type="text" class="form-control" id="name" placeholder="Full Name" required="">
-                    </fieldset>
-                  </div>
-                  <div class="col-lg-4 col-md-12 col-sm-12">
-                    <fieldset>
-                      <input name="email" type="text" class="form-control" id="email" pattern="[^ @]*@[^ @]*" placeholder="E-Mail Address" required="">
-                    </fieldset>
-                  </div>
-                  <div class="col-lg-4 col-md-12 col-sm-12">
-                    <fieldset>
-                      <input name="subject" type="text" class="form-control" id="subject" placeholder="Subject" required="">
-                    </fieldset>
-                  </div>
-                  <div class="col-lg-12">
-                    <fieldset>
-                      <textarea name="message" rows="6" class="form-control" id="message" placeholder="Your Message" required=""></textarea>
-                    </fieldset>
-                  </div>
-                  <div class="col-lg-12">
-                    <fieldset>
-                      <button type="submit" id="form-submit" class="filled-button">Send Message</button>
-                    </fieldset>
-                  </div>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+            <br><br><br>
+    </body>
 
-    <div id="map">
-<!-- How to change your own map point
-	1. Go to Google Maps
-	2. Click on your location point
-	3. Click "Share" and choose "Embed map" tab
-	4. Copy only URL and paste it within the src="" field below
--->
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3507.2304547867197!2d77.48598957528291!3d28.47260557575241!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ceb193588358f%3A0x8274cec5a1321578!2sGL%20Bajaj%20Institute%20of%20Technology%20%26%20Management!5e0!3m2!1sen!2sin!4v1720351571865!5m2!1sen!2sin" width="100%" height="500px" frameborder="0" style="border:0" allowfullscreen></iframe>
-    </div>
 
     <div class="partners">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="owl-partners owl-carousel">
-            
-              <div class="partner-item">
-                <img src="assets/images/logo.png" title="1" alt="1">
-              </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="owl-partners owl-carousel">
               
-              <div class="partner-item">
-                <img src="assets/images/logo.png" title="2" alt="2">
-              </div>
-              
-              <div class="partner-item">
-                <img src="assets/images/logo.png" title="3" alt="3">
-              </div>
-              
-              <div class="partner-item">
-                <img src="assets/images/logo.png" title="4" alt="4">
-              </div>
-              
-              <div class="partner-item">
-                <img src="assets/images/logo.png" title="5" alt="5">
-              </div>
-              
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-    <!-- Footer Starts Here -->
-    <footer>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-3 footer-item">
-            <h4>EcoParali</h4>
-            <p>Transformers of Stubble into Tomorrow's Resources</p>
-            <ul class="social-icons">
-              <li><a href="https://www.linkedin.com/in/juhi-pathak/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-              <li><a href="https://www.linkedin.com/in/ijaiswalshivam/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-              <li><a href="https://www.linkedin.com/in/tanishka-saraswat-65aa19229/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-              <li><a href="https://www.linkedin.com/in/aditi-kumari-7a08b3251/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-            </ul>
-          </div>
-          <div class="col-md-3 footer-item">
-            <h4>Useful Links</h4>
-            <ul class="menu-list">
-              <li><a href="https://www.news18.com/news/india/what-is-parali-a-look-at-delhi-air-pollutions-biggest-contributor-4295951.html" target="_blank">
-                Biggest Air Polluter</a></li>
-              <li><a href="https://hortharyana.gov.in/en/stubble-burning" target="_blank">Stubble Burning</a></li>
-              <li><a href="https://caqm.nic.in/WriteReadData/LINKS/Parali%20-%20Ek%20Punjia9143149-97a5-4fff-b321-b31eed2a8133.pdf" target="_blank">
-                Parali - A Treasure</a></li>
-              <li><a href="https://pib.gov.in/PressReleasePage.aspx?PRID=1779712" target="_blank">Reducing Pollution due<br>to Stubble Burning</a></li>
-              
-            </ul>
-          </div>
-          <div class="col-md-3 footer-item">
-            <h4>Additional Pages</h4>
-            <ul class="menu-list">
-              <li><a href="about.html">About Us</a></li>
-              <li><a href="#">How We Work</a></li>
-              
-              <li><a href="contact.html">Contact Us</a></li>
-              
-            </ul>
-          </div>
-          <div class="col-md-3 footer-item last-item">
-            <h4>Contact Us</h4>
-            <div class="contact-form">
-              <form id="contact footer-contact" action="" method="post">
-                <div class="row">
-                  <div class="col-lg-12 col-md-12 col-sm-12">
-                    <fieldset>
-                      <input name="name" type="text" class="form-control" id="name" placeholder="Full Name" required="">
-                    </fieldset>
-                  </div>
-                  <div class="col-lg-12 col-md-12 col-sm-12">
-                    <fieldset>
-                      <input name="email" type="text" class="form-control" id="email" pattern="[^ @]*@[^ @]*" placeholder="E-Mail Address" required="">
-                    </fieldset>
-                  </div>
-                  <div class="col-lg-12">
-                    <fieldset>
-                      <textarea name="message" rows="6" class="form-control" id="message" placeholder="Your Message" required=""></textarea>
-                    </fieldset>
-                  </div>
-                  <div class="col-lg-12">
-                    <fieldset>
-                      <button type="submit" id="form-submit" class="filled-button">Send Message</button>
-                    </fieldset>
-                  </div>
+                <div class="partner-item">
+                  <img src="assets/images/logo.png" title="1" alt="1">
                 </div>
-              </form>
+                
+                <div class="partner-item">
+                  <img src="assets/images/logo.png" title="2" alt="2">
+                </div>
+                
+                <div class="partner-item">
+                  <img src="assets/images/logo.png" title="3" alt="3">
+                </div>
+                
+                <div class="partner-item">
+                  <img src="assets/images/logo.png" title="4" alt="4">
+                </div>
+                
+                <div class="partner-item">
+                  <img src="assets/images/logo.png" title="5" alt="5">
+                </div>
+                
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </footer>
-   
-    
-    <div class="sub-footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <p>Copyright &copy; 2024 EcoParali
-            
-            - Design: <a rel="nofollow noopener" href="https://templatemo.com" target="_blank">Paryavaran Pioneers</a></p>
+    <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 footer-item">
+              <h4>EcoParali</h4>
+              <p>Transformers of Stubble into Tomorrow's Resources</p>
+              <ul class="social-icons">
+                <li><a href="https://www.linkedin.com/in/juhi-pathak/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/ijaiswalshivam/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/tanishka-saraswat-65aa19229/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/aditi-kumari-7a08b3251/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+              </ul>
+            </div>
+            <div class="col-md-3 footer-item">
+              <h4>Useful Links</h4>
+              <ul class="menu-list">
+                <li><a href="https://www.news18.com/news/india/what-is-parali-a-look-at-delhi-air-pollutions-biggest-contributor-4295951.html" target="_blank">
+                  Biggest Air Polluter</a></li>
+                <li><a href="https://hortharyana.gov.in/en/stubble-burning" target="_blank">Stubble Burning</a></li>
+                <li><a href="https://caqm.nic.in/WriteReadData/LINKS/Parali%20-%20Ek%20Punjia9143149-97a5-4fff-b321-b31eed2a8133.pdf" target="_blank">
+                  Parali - A Treasure</a></li>
+                <li><a href="https://pib.gov.in/PressReleasePage.aspx?PRID=1779712" target="_blank">Reducing Pollution due<br>to Stubble Burning</a></li>
+                
+              </ul>
+            </div>
+            <div class="col-md-3 footer-item">
+              <h4>Additional Pages</h4>
+              <ul class="menu-list">
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="#">How We Work</a></li>
+                
+                <li><a href="contact.html">Contact Us</a></li>
+                
+              </ul>
+            </div>
+            <div class="col-md-3 footer-item last-item">
+              <h4>Contact Us</h4>
+              <div class="contact-form">
+                <form id="contact footer-contact" action="" method="post">
+                  <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                      <fieldset>
+                        <input name="name" type="text" class="form-control" id="name" placeholder="Full Name" required="">
+                      </fieldset>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                      <fieldset>
+                        <input name="email" type="text" class="form-control" id="email" pattern="[^ @]*@[^ @]*" placeholder="E-Mail Address" required="">
+                      </fieldset>
+                    </div>
+                    <div class="col-lg-12">
+                      <fieldset>
+                        <textarea name="message" rows="6" class="form-control" id="message" placeholder="Your Message" required=""></textarea>
+                      </fieldset>
+                    </div>
+                    <div class="col-lg-12">
+                      <fieldset>
+                        <button type="submit" id="form-submit" class="filled-button">Send Message</button>
+                      </fieldset>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+     
+      
+      <div class="sub-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <p>Copyright &copy; 2024 EcoParali
+              
+              - Design: <a rel="nofollow noopener" href="https://templatemo.com" target="_blank">Paryavaran Pioneers</a></p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-    <!-- Additional Scripts -->
-    <script src="assets/js/custom.js"></script>
-    <script src="assets/js/owl.js"></script>
-    <script src="assets/js/slick.js"></script>
-    <script src="assets/js/accordions.js"></script>
-
-    <script language = "text/Javascript"> 
-      cleared[0] = cleared[1] = cleared[2] = 0; //set a cleared flag for each field
-      function clearField(t){                   //declaring the array outside of the
-      if(! cleared[t.id]){                      // function makes it static and global
-          cleared[t.id] = 1;  // you could use true and false, but that's more typing
-          t.value='';         // with more chance of typos
-          t.style.color='#fff';
-          }
-      }
-    </script>
-
-<script>
-  // Cursor animation script
-  document.addEventListener('DOMContentLoaded', function () {
-      const cursor = document.getElementById('cursor');
-
-      document.addEventListener('mousemove', function (e) {
-          cursor.style.left = e.pageX + 'px';
-          cursor.style.top = e.pageY + 'px';
-      });
-
-      document.addEventListener('mouseover', function (e) {
-          if (e.target.tagName === 'A') {
-              cursor.classList.add('hover');
-          }
-      });
-
-      document.addEventListener('mouseout', function (e) {
-          if (e.target.tagName === 'A') {
-              cursor.classList.remove('hover');
-          }
-      });
-  });
-</script>
-
-  </body>
-</html>
+  
+      <!-- Bootstrap core JavaScript -->
+      <script src="vendor/jquery/jquery.min.js"></script>
+      <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  
+      <!-- Additional Scripts -->
+      <script src="assets/js/custom.js"></script>
+      <script src="assets/js/owl.js"></script>
+      <script src="assets/js/slick.js"></script>
+      <script src="assets/js/accordions.js"></script>
+  
+      <script language = "text/Javascript"> 
+        cleared[0] = cleared[1] = cleared[2] = 0; //set a cleared flag for each field
+        function clearField(t){                   //declaring the array outside of the
+        if(! cleared[t.id]){                      // function makes it static and global
+            cleared[t.id] = 1;  // you could use true and false, but that's more typing
+            t.value='';         // with more chance of typos
+            t.style.color='#fff';
+            }
+        }
+      </script>
+      <script>
+        // Cursor animation script
+        document.addEventListener('DOMContentLoaded', function () {
+            const cursor = document.getElementById('cursor');
+      
+            document.addEventListener('mousemove', function (e) {
+                cursor.style.left = e.pageX + 'px';
+                cursor.style.top = e.pageY + 'px';
+            });
+      
+            document.addEventListener('mouseover', function (e) {
+                if (e.target.tagName === 'A') {
+                    cursor.classList.add('hover');
+                }
+            });
+      
+            document.addEventListener('mouseout', function (e) {
+                if (e.target.tagName === 'A') {
+                    cursor.classList.remove('hover');
+                }
+            });
+        });
+      </script>
+  
+    </body>
+  </html>
