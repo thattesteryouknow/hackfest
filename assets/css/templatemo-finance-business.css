@@ -1118,6 +1118,19 @@ footer .contact-form button.filled-button:hover {
 	color: #fff;
 }
 
+.govtpolicies {
+	text-align: center;
+	background-image: url(../images/govtpolicies.png);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: #fff;
+	padding: 120px 0;
+        height: 300px;
+        width: 1584px;
+        margin: auto;
+}
+
 .page-heading h1 {
 	text-transform: capitalize;
 	font-size: 36px;
