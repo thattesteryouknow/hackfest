@@ -36,6 +36,27 @@
         }
     </style>
 
+<style>
+    /* Custom cursor animation */
+    .cursor {
+        width: 15px;
+        height: 15px;
+        border: 2px solid #44cb05;
+        border-radius: 50%;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        pointer-events: none;
+        transition: width 0.2s ease, height 0.2s ease, border 0.2s ease;
+        z-index: 1000;
+    }
+
+    .cursor.hover {
+        width: 25px;
+        height: 25px;
+        border: 2px solid #44cb05;
+    }
+</style>
+
 </head>
 
 <body>
@@ -49,67 +70,76 @@
         </div>
     </div>
     <!-- ***** Preloader End ***** -->
+      <!-- Custom Cursor -->
+      <div class="cursor" id="cursor"></div>
 
-    <!-- Header -->
-    <div class="sub-header">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8 col-xs-12">
-                    <ul class="left-info">
-                        <li><a href="#"><i class="fa fa-clock-o"></i>Mon-Fri 10:00-16:00</a></li>
-                        <li><a href="#"><i class="fa fa-phone"></i>+91-817-190-8727</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-4">
-                    <ul class="right-icons">
-                        <li style="font-weight: bold; color: white;">Meet the Creators</li>
-                        <li><a href="https://www.linkedin.com/in/juhi-pathak/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-                        <li><a href="https://www.linkedin.com/in/ijaiswalshivam/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-                        <li><a href="https://www.linkedin.com/in/tanishka-saraswat-65aa19229/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-                        <li><a href="https://www.linkedin.com/in/aditi-kumari-7a08b3251/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-                    </ul>
-                </div>
-            </div>
+  <!-- Header -->
+  <div class="sub-header">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-xs-12">
+          <ul class="left-info">
+            <li><a href="#"><i class="fa fa-clock-o"></i>Mon-Fri 10:00-16:00</a></li>
+            <li><a href="#"><i class="fa fa-phone"></i>+91-817-190-8727</a></li>
+          </ul>
         </div>
+        <div class="col-md-4">
+          <ul class="right-icons">
+            <l1 style="font-weight: bold; color: white;">Meet the Creators</l1>
+            <li><a href="https://www.linkedin.com/in/juhi-pathak/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/ijaiswalshivam/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/tanishka-saraswat-65aa19229/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/aditi-kumari-7a08b3251/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+          </ul>
+        </div>
+      </div>
     </div>
+  </div>
 
-    <header class="">
-        <nav class="navbar navbar-expand-lg">
-            <img src="assets/images/ecobot.png" width="90px" height="100px" alt="" style="position: absolute; top:10px; bottom: 0; right: 0; animation: pulsate 2s ease-in-out infinite;">
-
-    <style>
-        @keyframes pulsate {
-            0% { transform: scale(1); }
-            50% { transform: scale(1.1); }
-            100% { transform: scale(1); }
-        }
-    </style>
-            <div class="container">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="about.html">About Us</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="services.html">Our Services</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact Us</a>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" href="login.html">Log In/Register <span class="sr-only">(current)</span></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
+  <header class="">
+    
+    <nav class="navbar navbar-expand-lg">
+      <a href="chatbot.html">
+      <img src="assets/images/ecobot.png" width="90px" height="100px" alt="" style="position: absolute; top:10px; bottom: 0; right: 0; animation: pulsate 2s ease-in-out infinite;">
+      </a>
+  <style>
+      @keyframes pulsate {
+          0% { transform: scale(1); }
+          50% { transform: scale(1.1); }
+          100% { transform: scale(1); }
+      }
+  </style>
+      <div class="container">
+        
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home
+                
+              </a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#top">About Us</a>
+              <span class="sr-only">(current)</span>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">Our Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="login.html">Log In/Register</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
 
     <!-- Page Content -->
     <div class="login-page-heading header-text">
@@ -326,6 +356,30 @@
             });
         });
     </script>
+
+<script>
+    // Cursor animation script
+    document.addEventListener('DOMContentLoaded', function () {
+        const cursor = document.getElementById('cursor');
+  
+        document.addEventListener('mousemove', function (e) {
+            cursor.style.left = e.pageX + 'px';
+            cursor.style.top = e.pageY + 'px';
+        });
+  
+        document.addEventListener('mouseover', function (e) {
+            if (e.target.tagName === 'A') {
+                cursor.classList.add('hover');
+            }
+        });
+  
+        document.addEventListener('mouseout', function (e) {
+            if (e.target.tagName === 'A') {
+                cursor.classList.remove('hover');
+            }
+        });
+    });
+  </script>
 
 </body>
 

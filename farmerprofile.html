@@ -19,6 +19,27 @@
     <link rel="stylesheet" href="assets/css/templatemo-finance-business.css">
     <link rel="stylesheet" href="assets/css/owl.css">
 
+    <style>
+      /* Custom cursor animation */
+      .cursor {
+          width: 15px;
+          height: 15px;
+          border: 2px solid #44cb05;
+          border-radius: 50%;
+          position: absolute;
+          transform: translate(-50%, -50%);
+          pointer-events: none;
+          transition: width 0.2s ease, height 0.2s ease, border 0.2s ease;
+          z-index: 1000;
+      }
+
+      .cursor.hover {
+          width: 25px;
+          height: 25px;
+          border: 2px solid #44cb05;
+      }
+  </style>
+
   </head>
 
   <body>
@@ -32,6 +53,9 @@
         </div>
     </div>  
     <!-- ***** Preloader End ***** -->
+
+     <!-- Custom Cursor -->
+     <div class="cursor" id="cursor"></div>
 
     <!-- Header -->
     <div class="sub-header">
@@ -59,7 +83,9 @@
     <header class="">
       
       <nav class="navbar navbar-expand-lg">
+        <a href="chatbot.html">
         <img src="assets/images/ecobot.png" width="90px" height="100px" alt="" style="position: absolute; top:10px; bottom: 0; right: 0; animation: pulsate 2s ease-in-out infinite;">
+        </a>
 
     <style>
         @keyframes pulsate {
@@ -541,6 +567,30 @@
             }
         }
       </script>
+
+<script>
+  // Cursor animation script
+  document.addEventListener('DOMContentLoaded', function () {
+      const cursor = document.getElementById('cursor');
+
+      document.addEventListener('mousemove', function (e) {
+          cursor.style.left = e.pageX + 'px';
+          cursor.style.top = e.pageY + 'px';
+      });
+
+      document.addEventListener('mouseover', function (e) {
+          if (e.target.tagName === 'A') {
+              cursor.classList.add('hover');
+          }
+      });
+
+      document.addEventListener('mouseout', function (e) {
+          if (e.target.tagName === 'A') {
+              cursor.classList.remove('hover');
+          }
+      });
+  });
+</script>
   
     </body>
   </html>
