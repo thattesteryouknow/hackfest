@@ -156,23 +156,34 @@
 
 
     <!-- chatbot-->
-    <div class="chatbotcontainer">
+   <div class="chatbotcontainer">
       <div class="chat-container">
         <div class="virtualassistant">
           <h6 style="color: white;">EcoBot</h6>
         </div>
         <div id="chatbox">
           <div word-wrap: break-word; class="message bot-message">Heyy, Welcome to Ecoparali.</div>
+          <div word-wrap: break-word; class="message bot-message">
+            <ul>
+              <li><a onclick="handleInitialQuestion('stubble')">What is stubble?</a></li>
+              <li><a onclick="handleInitialQuestion('ecoparali')">What is Ecoparali?</a></li>
+              <li><a onclick="handleInitialQuestion('sell')">How can I sell stubble?</a></li>
+          </ul>
+          </div>
           <div word-wrap: break-word; class="message user-message"></div>
         </div>
         <div id="typingIndicator" class="message bot-message" style="display: none;">  ...   </div>
+       
         <ul>
           <tr>
+            
         <input type="text" id="userInput" placeholder="Type a message..." onkeydown="if (event.keyCode == 13) { sendMessage(); }">
         <button onclick="sendMessage()">Send</button>
         </tr></ul>
       </div>
     </div>
+  
+
 
     <!-- Page Content -->
     
