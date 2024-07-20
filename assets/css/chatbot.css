@@ -29,6 +29,13 @@
   margin: 20px auto;
 }
 
+#initialQuestions{
+  background:  #28a745;
+  align-self: flex-start;
+  animation-delay: 0.5s;
+  color:white;
+  width:350px;
+}
 #chatbox {
   flex: 1;
   overflow-y: auto;
@@ -47,6 +54,7 @@
   word-wrap: break-word;
   opacity: 0;
   animation: fadeIn 0.5s forwards;
+  
 }
 
 @keyframes fadeIn {
