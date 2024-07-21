@@ -1,4 +1,55 @@
+/*what we do*/
+#carouselExampleIndicators {
+  max-width: 1000px;
+	max-height: 800px; /* Adjust the max-width as per your requirement */
+  margin: 0 auto;
+	background-color: #82ad32; /* Center the carousel horizontally */
+}
+.buttonaboutslider{
+	align-items: center;
+}
+.carousel-caption p{
+   color:white;
+}
 
+.carousel-item img {
+  max-width: 100%; /* Ensure images within carousel items are responsive */
+  height: auto; /* Maintain aspect ratio */
+}
+.headerabouttttt{
+	text-align: center;
+	align-content: center;
+	justify-content: center;
+}
+.text-center {
+	text-align: center;
+	margin-top: 20px; /* Adjust as needed */
+}
+.center-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 10vh; /* Full viewport height */
+}
+
+/* Style for the centered button */
+.centered-button {
+	background-color: #82ad32;
+	color: #fff;
+	font-size: 13px;
+	text-transform: uppercase;
+	font-weight: 700;
+	padding: 12px 30px;
+	border-radius: 30px;
+	display: inline-block;
+	transition: all 0.3s;
+}
+
+.centered-button:hover {
+	background-color: #fff;
+	color: #82ad32;
+}
+/*what we do*/
 body {
   font-family: 'Poppins', sans-serif;
   overflow-x: hidden;
@@ -543,55 +594,6 @@ ul.slick-dots {
 
 
 /* Services */
-
-#carouselExampleIndicators {
-  max-width: 1000px;
-	max-height: 800px; /* Adjust the max-width as per your requirement */
-  margin: 0 auto;
-	background-color: #f5f5f5; /* Center the carousel horizontally */
-}
-.buttonaboutslider{
-	align-items: center;
-}
-
-.carousel-item img {
-  max-width: 100%; /* Ensure images within carousel items are responsive */
-  height: auto; /* Maintain aspect ratio */
-}
-.headerabouttttt{
-	text-align: center;
-	align-content: center;
-	justify-content: center;
-}
-.text-center {
-	text-align: center;
-	margin-top: 20px; /* Adjust as needed */
-}
-.center-container {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 10vh; /* Full viewport height */
-}
-
-/* Style for the centered button */
-.centered-button {
-	background-color: #82ad32;
-	color: #fff;
-	font-size: 13px;
-	text-transform: uppercase;
-	font-weight: 700;
-	padding: 12px 30px;
-	border-radius: 30px;
-	display: inline-block;
-	transition: all 0.3s;
-}
-
-.centered-button:hover {
-	background-color: #fff;
-	color: #82ad32;
-}
-
 
 .services {
 	margin-top: 140px;
@@ -1165,19 +1167,6 @@ footer .contact-form button.filled-button:hover {
 	background-size: cover;
 	padding: 230px 0px 150px 0px;
 	color: #fff;
-}
-
-.govtpolicies {
-	text-align: center;
-	background-image: url(../images/govtpolicies.png);
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	color: #fff;
-	padding: 120px 0;
-        height: 300px;
-        width: 1584px;
-        margin: auto;
 }
 
 .page-heading h1 {

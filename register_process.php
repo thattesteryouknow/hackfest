@@ -1,6 +1,3 @@
-comp[any]
-
-
 <?php
 // Database configuration
 $servername = "localhost";
@@ -37,6 +34,14 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 // Prepare and bind
                 $stmt = $conn->prepare("INSERT INTO farmers (name, agricultural_land, amount, location, mobile, password, duration) VALUES (?, ?, ?, ?, ?, ?, ?)");
                 $stmt->bind_param("ssdssss", $name, $agricultural_land, $amount, $location, $mobile, $password, $duration);
+
+                // Execute the prepared statement
+                if ($stmt->execute()) {
+                    echo "Farmer registration successful!";
+                } else {
+                    echo "Error: " . $stmt->error;
+                }
+                $stmt->close();
             } else {
                 echo "Error: Missing farmer-specific fields.";
                 exit;
@@ -58,6 +63,14 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 // Prepare and bind
                 $stmt = $conn->prepare("INSERT INTO companies (company_name, mobile, password, about, region, buy_sell, product_type_buy, product_name, product_description, quantity, price, company_location) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
                 $stmt->bind_param("sssssssssdss", $company_name, $mobile, $password, $about, $region, $buy_sell, $product_type_buy, $product_name, $product_description, $quantity, $price, $company_location);
+
+                // Execute the prepared statement
+                if ($stmt->execute()) {
+                    echo "Company registration successful!";
+                } else {
+                    echo "Error: " . $stmt->error;
+                }
+                $stmt->close();
             } else {
                 echo "Error: Missing company-specific fields.";
                 exit;
@@ -66,15 +79,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             echo "Error: Invalid user type.";
             exit;
         }
-
-        // Execute the prepared statement
-        if ($stmt->execute()) {
-            echo "Registration successful!";
-        } else {
-            echo "Error: " . $stmt->error;
-        }
-
-        $stmt->close();
     } else {
         echo "Error: Missing required fields.";
     }
