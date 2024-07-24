@@ -185,7 +185,7 @@
                         <input type="password" class="form-control" id="password" placeholder="Password" required>
                     </div>
 
-                      <button type="submit" class="filled-button"><a href ="admin_dashboard.html">Login</a></button>
+                      <button type="submit" class="filled-button"><a href ="admin_dashboard.html"  style="color: white">Login</a></button>
                   </form>
                   <!--<div class="text-center">
                       <a href="register.html">Don't have an account? Register</a>
@@ -372,6 +372,24 @@
           }
       });
   });
+  
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the default form submission
+
+            // Get the values entered in the form
+            var userid = document.getElementById('userid').value;
+            var password = document.getElementById('password').value;
+
+            // Check if the entered credentials match the admin credentials
+            if (userid === 'pioneers05' && password === 'ecoparali@05') {
+                // Redirect to admin dashboard if credentials are correct
+                window.location.href = 'admin_dashboard.html';
+            } else {
+                // Show an alert if credentials are incorrect
+                alert('Invalid User ID or Password');
+            }
+        });
+   
 </script>
 
   </body>
