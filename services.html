@@ -18,6 +18,9 @@
     <link rel="stylesheet" href="assets/css/fontawesome.css">
     <link rel="stylesheet" href="assets/css/templatemo-finance-business.css">
     <link rel="stylesheet" href="assets/css/owl.css">
+    
+      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+      <link rel="stylesheet" href="css/bootstrap-datepicker.min.css">
    
     <style>
       /* Custom cursor animation */
@@ -200,6 +203,71 @@
                   <p style="text-align:justify">We collaborate with companies on research and development projects to explore new uses for stubble and 
                     innovate sustainable products. This partnership fosters innovation and promotes the use of agricultural waste in various industrial applications.</p>
                     <br><a href="login.html" class="filled-button">Log in to Buy/Sell</a>
+                    
+
+                    <div class="customers" style="display: flex; align-items: center; justify-content: center; height: 20vh; text-align: center;">
+                      <h1>Our Partners</h1>
+                    </div>
+                    <div class="container marketing">
+                      <!-- Three columns of text below the carousel -->
+                      <div class="row">
+                        <div class="col-lg-4 text-center">
+                          <img src="assets/images/partner1.jpg" class="bd-placeholder-img rounded-circle" width="140" height="140" alt="Image 1">
+                          <br>
+                          <h4><br>Dharaksha Ecosolution</h4>
+                           
+                          <p>Dharaksha Ecosolution creates biodegradable packaging from agricultural waste as an alternative to Thermocol, addressing both stubble burning and plastic pollution.</p>
+                         
+                          </div><!-- /.col-lg-4 -->
+                          <div class="col-lg-4 text-center">
+                            <img src="assets/images/partner3.png" class="bd-placeholder-img rounded-circle" width="140" height="140" alt="Image 3">
+                            <h4><br>E-Parali</h4>
+                            <br>
+                            <p>E-parali is an app that offers affordable rental of agricultural machinery, helping small Indian farmers who can't afford high-cost equipment. It also aims to reduce carbon emissions.</p>
+                          </div><!-- /.col-lg-4 -->
+                          <div class="col-lg-4 text-center">
+                            <img src="assets/images/partner2.png" class="bd-placeholder-img rounded-circle" width="140" height="140" alt="Image 2">
+                            <br>
+                            <h4><br>SoilTech</h4>
+                            <br>
+                            <p>Stubble Digest is a natural liquid that accelerates crop residue decomposition with safe bacteria, enzymes, and surfactants. It's eco-friendly and safe for crops, soil, and farmers.
+                            </p>
+                            
+                          </div><!-- /.col-lg-4 -->
+                        
+                      </div><!-- /.row -->
+
+                    </div><!-- /.container marketing -->
+                    <br><br><br><br>
+                     <div class="container marketing">
+                       <!-- Three columns of text below the carousel -->
+                       <div class="row">
+                         <div class="col-lg-4 text-center">
+                           <img src="assets/images/partner4.png" class="bd-placeholder-img rounded-circle" width="140" height="140" alt="Image 3">
+                           <h4><br>Strawcture</h4>
+                           <br>
+                           <p>Strawcture makes eco-friendly composite panels from crop residues. Used for doors, drywall, furniture, and flooring, these panels are made from over 90% straw and a special adhesive.</p>
+                         </div><!-- /.col-lg-4 -->
+                         <div class="col-lg-4 text-center">
+                           <img src="assets/images/partner5.png" class="bd-placeholder-img rounded-circle" width="140" height="140" alt="Image 1">
+                           <br>
+                           <h4><br>Takachar</h4>
+                            
+                            <br>
+                           <p>Takachar, based in Delhi, has developed a machine that transforms agricultural waste into marketable products like fuel and fertilizer, helping farmers increase their income.</p>
+                          
+                           </div><!-- /.col-lg-4 -->
+                           <div class="col-lg-4 text-center">
+                             <img src="assets/images/partner6.png" class="bd-placeholder-img rounded-circle" width="140" height="140" alt="Image 2">
+                             <br>
+                             <h4><br>Verve Renewables </h4>
+                             <br>
+                             <p>Verve Renewables, based in Mumbai, offers a complete biomass solution, managing agro-waste from farms to boiler-ready briquettes and pellets, and preventing waste burning.</p>
+                             
+                           </div><!-- /.col-lg-4 -->
+                         
+                       </div><!-- /.row -->
+                     </div><!-- /.container marketing -->
               </article>
               
               <article id='tabs-3'>
@@ -252,7 +320,21 @@
       </div>
     </div>
 
+    <!--partners-->
     
+      <!-- start slider section -->
+      
+  
+  
+ 
+    </div>
+  </div>
+
+  
+
+</div>
+ 
+    <!--partners end-->
 
     <div class="partners">
       <div class="container">
@@ -391,6 +473,29 @@
     </script>
 
 <script>
+
+let currentSlide = 0;
+
+function showSlide(index) {
+  const slides = document.querySelectorAll('.carousel-item');
+  if (index >= slides.length) {
+    currentSlide = 0;
+  } else if (index < 0) {
+    currentSlide = slides.length - 1;
+  } else {
+    currentSlide = index;
+  }
+  const offset = -currentSlide * 100;
+  document.getElementById('carouselInner').style.transform = `translateX(${offset}%)`;
+}
+
+function nextSlide() {
+  showSlide(currentSlide + 1);
+}
+
+function prevSlide() {
+  showSlide(currentSlide - 1);
+}
   // Cursor animation script
   document.addEventListener('DOMContentLoaded', function () {
       const cursor = document.getElementById('cursor');
@@ -413,6 +518,9 @@
       });
   });
 </script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
   </body>
 </html>
