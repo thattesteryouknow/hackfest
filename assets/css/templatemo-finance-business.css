@@ -1,4 +1,9 @@
+/*our partners*/
+.rounded-circle {
+	border: 2px solid black;
+}
 /*what we do*/
+
 #carouselExampleIndicators {
   max-width: 1000px;
 	max-height: 800px; /* Adjust the max-width as per your requirement */
